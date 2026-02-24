@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Startup_1",
+    "Projects": [
+      {
+        "Path": "RentABook\\RentABook.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RentABookApp\\RentABookApp.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

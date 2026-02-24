@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="RentABook/RentABook.csproj" />
+  <Project Path="RentABookApp/RentABookApp.csproj" />
+  <Project Path="RentABookSharedLib/RentABookSharedLib.csproj" />
+  <Project Path="UnitTestRentABook/UnitTestRentABook.csproj" />
+</Solution>
