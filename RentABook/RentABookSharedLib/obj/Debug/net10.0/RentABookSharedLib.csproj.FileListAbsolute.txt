@@ -10,3 +10,16 @@ C:\Users\raman\source\repos\RentABook\RentABookSharedLib\obj\Debug\net10.0\refin
 C:\Users\raman\source\repos\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.pdb
 C:\Users\raman\source\repos\RentABook\RentABookSharedLib\obj\Debug\net10.0\ref\RentABookSharedLib.dll
 C:\Users\raman\source\repos\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.csproj.AssemblyReference.cache
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\bin\Debug\net10.0\RentABookSharedLib.deps.json
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\bin\Debug\net10.0\RentABookSharedLib.dll
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\bin\Debug\net10.0\RentABookSharedLib.pdb
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.csproj.AssemblyReference.cache
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.AssemblyInfoInputs.cache
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.AssemblyInfo.cs
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.csproj.CoreCompileInputs.cache
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.sourcelink.json
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.dll
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\refint\RentABookSharedLib.dll
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\RentABookSharedLib.pdb
+C:\Users\raman\Git\repos\4_Semester\RentABook\RentABookSharedLib\obj\Debug\net10.0\ref\RentABookSharedLib.dll

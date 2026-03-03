@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KDXMuQg1b40=",
+  "dgSpecHash": "8VWbzfJXu5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\raman\\source\\repos\\RentABook\\RentABookSharedLib\\RentABookSharedLib.csproj",
+  "projectFilePath": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABookSharedLib\\RentABookSharedLib.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raman\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\raman\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
