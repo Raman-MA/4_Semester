@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orange Tree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+    <header>
+      <h1>Orange Tree</h1>
+    </header>
+
+  
+    <div class="tree-image" id="treeImage">🌳</div>
+
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-label">Age</span>
+        <span class="stat-value" id="statAge">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Height (cm)</span>
+        <span class="stat-value" id="statHeight">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Oranges</span>
+        <span class="stat-value" id="statOranges">0</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Eaten</span>
+        <span class="stat-value" id="statEaten">0</span>
+      </div>
+    </div>
+
+:
+    <div class="controls">
+      <button id="btnYear">Next Year</button>
+      <div class="eat-group">
+        <input type="number" id="eatInput" min="1" value="1" />
+        <button id="btnEat"> Eat</button>
+      </div>
+      <button id="btnReset">Reset</button>
+    </div>
+
+ 
+    <ul id="logList"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
