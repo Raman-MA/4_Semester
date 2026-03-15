@@ -31,9 +31,9 @@ const tree = {
 };
 
 function getTreeEmoji() {
-  if (!tree.getTreeAlive())   return "🪵";   // deadcan 
-  if (tree.getNumOranges() > 0) return "🍊"; // oranges available
-  return "🌳";                                // alive, no oranges
+  if (!tree.getTreeAlive())   return "🪵"; 
+  if (tree.getNumOranges() > 0) return "🍊";
+  return "🌳";                                
 }
 
 function updateUI() {
