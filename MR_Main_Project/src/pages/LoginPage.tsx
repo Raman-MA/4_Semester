@@ -1,8 +1,9 @@
-import { useNavigate } from 'react-router-dom'
 import logo from '../assets/svendborgpng.png'
+import Button from '../components/Button'
+import useAppNavigation from '../hooks/useAppNavigation'
 
 function LoginPage() {
-  const navigate = useNavigate()
+  const { goToDashboard } = useAppNavigation()
 
   return (
     <div className="login-page">
@@ -38,9 +39,9 @@ function LoginPage() {
           />
         </div>
 
-        <button className="login-btn" type="button" onClick={() => navigate('/dashboard')}>
+        <Button className="login-btn" onClick={goToDashboard}>
           Log ind
-        </button>
+        </Button>
 
         <div className="login-links">
           <a href="#">Glemt kodeord?</a>
