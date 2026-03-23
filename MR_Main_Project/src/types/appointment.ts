@@ -1,14 +1,15 @@
-// We need Role from the enums file, so we import it
-import { Role } from './enums'
 
-// 'export' means other files can use this interface
+import { Status } from "./enums";
+import { Protocol } from "./enums";
+
+
+
 export interface User {
-  fullName: string
-  password: string
+  id: number
+  ArrivalTime: Date
+  ScheduleTime: number
+  IsUrgent: boolean
+  Status: Status
+  Protocol: Protocol
 }
 
-// 'extends User' works just like C# — Radiographer gets User's fields too
-export interface Radiographer extends User {
-  employeeNumber: string
-  role: Role  // uses the enum we imported above
-}

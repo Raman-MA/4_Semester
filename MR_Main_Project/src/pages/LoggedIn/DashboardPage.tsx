@@ -35,10 +35,7 @@ function DashboardPage() {
 
           <main className="main-content" />
           <div className="dashboard-actions">
-            <Button
-              className="logout-btn"
-              onClick={goToLogin}
-            >
+            <Button className="logout-btn" onClick={goToLogin}            >
               Log ud
             </Button>
           </div>

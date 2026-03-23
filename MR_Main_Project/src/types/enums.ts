@@ -22,3 +22,13 @@ export const Status = {
 } as const;
 
 export type Status = (typeof Status)[keyof typeof Status];
+
+export const Protocol = {
+  CerebrumStd: 'Cerebrum Standard',
+  CerebrumContrast: 'Cerebrum Contrast',
+  Ds: 'DS',
+  DsContrast: 'DS Contrast',
+  DsTreatment: 'DS Treatment'
+} as const;
+
+export type Protocol = (typeof Protocol)[keyof typeof Protocol];
