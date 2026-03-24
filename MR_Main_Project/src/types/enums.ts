@@ -14,11 +14,11 @@ export const Role = {
 export type Role = (typeof Role)[keyof typeof Role];
 
 export const Status = {
-    inProgress: 'In Progress',
-    completed: 'Completed',
-    Cancelled: 'Cancelled',
-    Noshow: 'No-show'
-    
+  inProgress: 'In Progress',
+  completed: 'Completed',
+  Cancelled: 'Cancelled',
+  Noshow: 'No-show'
+  
 } as const;
 
 export type Status = (typeof Status)[keyof typeof Status];

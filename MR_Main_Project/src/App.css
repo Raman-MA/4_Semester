@@ -214,6 +214,58 @@
   padding: 24px;
 }
 
+.create-user-card {
+  max-width: 400px;
+  background-color: var(--card-bg);
+  padding: 24px;
+  border-radius: 10px;
+}
+
+.create-user-title,
+.overview-title {
+  margin: 0 0 20px;
+  color: var(--body-text);
+}
+
+.create-user-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-user-submit {
+  margin-top: 10px;
+}
+
+.main-placeholder {
+  color: var(--body-text);
+  margin: 0;
+}
+
+.main-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-row {
+  background: white;
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  color: var(--body-text);
+}
+
+.user-row.selected {
+  border-color: var(--primary-btn);
+  background: var(--secondary-btn);
+}
+
+.selected-user-text {
+  margin-top: 14px;
+  color: var(--body-text);
+}
+
 .dashboard-actions {
   padding: 0 24px 24px;
 }
