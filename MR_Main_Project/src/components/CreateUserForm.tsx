@@ -43,7 +43,6 @@ function CreateUserForm({ onCreateUser }: CreateUserFormProps) {
             placeholder="Indtast navn"
           />
         </div>
-
         <div className="form-group">
           <label htmlFor="new-user-password">Kodeord</label>
           <InputField
@@ -54,7 +53,6 @@ function CreateUserForm({ onCreateUser }: CreateUserFormProps) {
             placeholder="Indtast kodeord"
           />
         </div>
-
         <Button type="submit" className="login-btn create-user-submit">
           Opret bruger
         </Button>

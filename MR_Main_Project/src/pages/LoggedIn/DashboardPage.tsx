@@ -1,11 +1,14 @@
 import { useState } from 'react'
+import type { CSSProperties } from 'react'
 import logo from '../../assets/svendborgpng.png'
 import Button from '../../components/Button'
+import CreateAppointmentForm, { type NewAppointment } from '../../components/CreateAppointmentForm'
 import CreateUserForm, { type NewUser } from '../../components/CreateUserForm'
 import List from '../../components/ListView'
+import TestComponent from '../../components/TestComponent'
 import useAppNavigation from '../../hooks/useAppNavigation'
 
-type DashboardView = 'oversigt' | 'opret' | 'forecast'
+type DashboardView = 'oversigt' | 'opret' | 'opretAftale' | 'test' | 'forecast'
 
 type UserItem = {
   id: number
@@ -13,11 +16,28 @@ type UserItem = {
   password: string
 }
 
+type AppointmentItem = NewAppointment & {
+  id: number
+}
+
 function DashboardPage() {
   const { goToLogin } = useAppNavigation()
   const [currentView, setCurrentView] = useState<DashboardView>('oversigt')
   const [users, setUsers] = useState<UserItem[]>([])
   const [selectedUser, setSelectedUser] = useState<UserItem | null>(null)
+  const [appointments, setAppointments] = useState<AppointmentItem[]>([])
+  const [selectedAppointment, setSelectedAppointment] = useState<AppointmentItem | null>(null)
+
+  const sidebarIndicatorIndex =
+    currentView === 'oversigt' ? 0 :
+      currentView === 'opret' ? 1 :
+        currentView === 'opretAftale' ? 2 :
+          currentView === 'test' ? 3 :
+            4
+
+  const sidebarStyle = {
+    '--active-index': sidebarIndicatorIndex,
+  } as CSSProperties
 
   const handleCreateUser = (newUser: NewUser) => {
     const userToAdd: UserItem = {
@@ -30,20 +50,38 @@ function DashboardPage() {
     setCurrentView('oversigt')
   }
 
+  const handleCreateAppointment = (newAppointment: NewAppointment) => {
+    const appointmentToAdd: AppointmentItem = {
+      id: Date.now(),
+      ...newAppointment,
+    }
+
+    setAppointments((previousAppointments) => [...previousAppointments, appointmentToAdd])
+    setCurrentView('oversigt')
+  }
+
   const renderMainContent = () => {
     if (currentView === 'opret') {
       return <CreateUserForm onCreateUser={handleCreateUser} />
     }
 
+    if (currentView === 'opretAftale') {
+      return <CreateAppointmentForm onCreateAppointment={handleCreateAppointment} />
+    }
+
     if (currentView === 'forecast') {
-      return <p className="main-placeholder">Forecast side kommer snart.</p>
+      return <p className="main-placeholder">Forecast side kommer forhåbentlig snart</p>
+    }
+
+    if (currentView === 'test') {
+      return <TestComponent />
     }
 
     return (
       <section>
         <h2 className="overview-title">Brugere</h2>
         {users.length === 0 ? (
-          <p className="main-placeholder">Ingen brugere endnu. Klik på Opret for at tilføje en bruger.</p>
+          <p className="main-placeholder">Ingen burger endnu. Klik på Opret bruger for at tilføje en burger.</p>
         ) : (
           <List
             items={users}
@@ -58,6 +96,31 @@ function DashboardPage() {
         )}
 
         {selectedUser && <p className="selected-user-text">Valgt bruger: {selectedUser.fullName}</p>}
+
+        <h2 className="overview-title">Aftaler</h2>
+        {appointments.length === 0 ? (
+          <p className="main-placeholder">Ingen aftaler endnu. Klik på Opret aftale for at tilføje en aftale.</p>
+        ) : (
+          <List
+            items={appointments}
+            keyExtractor={(appointment) => appointment.id}
+            onSelectionChange={(appointment) => setSelectedAppointment(appointment)}
+            renderItem={(appointment, isSelected) => (
+              <div className={`user-row${isSelected ? ' selected' : ''}`}>
+                <span>
+                  {appointment.arrivalTime.toLocaleString()} | {appointment.protocol}
+                  {appointment.isUrgent ? ' | Akut' : ''}
+                </span>
+              </div>
+            )}
+          />
+        )}
+
+        {selectedAppointment && (
+          <p className="selected-user-text">
+            Valgt aftale: {selectedAppointment.protocol} ({selectedAppointment.scheduleTime} min)
+          </p>
+        )}
       </section>
     )
   }
@@ -74,7 +137,8 @@ function DashboardPage() {
             />
           </div>
 
-          <div className="sidebar-buttons">
+          <div className="sidebar-buttons" style={sidebarStyle}>
+            <span className="sidebar-indicator" aria-hidden="true" />
             <Button
               className={`sidebar-btn${currentView === 'oversigt' ? ' active' : ''}`}
               onClick={() => setCurrentView('oversigt')}
@@ -85,7 +149,19 @@ function DashboardPage() {
               className={`sidebar-btn${currentView === 'opret' ? ' active' : ''}`}
               onClick={() => setCurrentView('opret')}
             >
-              Opret
+              Opret bruger
+            </Button>
+            <Button
+              className={`sidebar-btn${currentView === 'opretAftale' ? ' active' : ''}`}
+              onClick={() => setCurrentView('opretAftale')}
+            >
+              Opret aftale
+            </Button>
+            <Button
+              className={`sidebar-btn${currentView === 'test' ? ' active' : ''}`}
+              onClick={() => setCurrentView('test')}
+            >
+              Test
             </Button>
             <Button
               className={`sidebar-btn${currentView === 'forecast' ? ' active' : ''}`}
