@@ -7,6 +7,7 @@ import CreateUserForm, { type NewUser } from '../../components/CreateUserForm'
 import List from '../../components/ListView'
 import TestComponent from '../../components/TestComponent'
 import useAppNavigation from '../../hooks/useAppNavigation'
+import usePersistedState from '../../hooks/usePersistedState'
 
 type DashboardView = 'oversigt' | 'opret' | 'opretAftale' | 'test' | 'forecast'
 
@@ -20,13 +21,25 @@ type AppointmentItem = NewAppointment & {
   id: number
 }
 
+type StoredAppointmentItem = Omit<AppointmentItem, 'arrivalTime'> & {
+  arrivalTime: string
+}
+
 function DashboardPage() {
   const { goToLogin } = useAppNavigation()
   const [currentView, setCurrentView] = useState<DashboardView>('oversigt')
-  const [users, setUsers] = useState<UserItem[]>([])
+  const [users, setUsers] = usePersistedState<UserItem[]>('dashboard-users', [])
   const [selectedUser, setSelectedUser] = useState<UserItem | null>(null)
-  const [appointments, setAppointments] = useState<AppointmentItem[]>([])
+  const [storedAppointments, setStoredAppointments] = usePersistedState<StoredAppointmentItem[]>(
+    'dashboard-appointments',
+    [],
+  )
   const [selectedAppointment, setSelectedAppointment] = useState<AppointmentItem | null>(null)
+
+  const appointments: AppointmentItem[] = storedAppointments.map((appointment) => ({
+    ...appointment,
+    arrivalTime: new Date(appointment.arrivalTime),
+  }))
 
   const sidebarIndicatorIndex =
     currentView === 'oversigt' ? 0 :
@@ -56,10 +69,15 @@ function DashboardPage() {
       ...newAppointment,
     }
 
-    setAppointments((previousAppointments) => [...previousAppointments, appointmentToAdd])
+    setStoredAppointments((previousAppointments) => [
+      ...previousAppointments,
+      {
+        ...appointmentToAdd,
+        arrivalTime: appointmentToAdd.arrivalTime.toISOString(),
+      },
+    ])
     setCurrentView('oversigt')
   }
-
   const renderMainContent = () => {
     if (currentView === 'opret') {
       return <CreateUserForm onCreateUser={handleCreateUser} />
@@ -68,15 +86,12 @@ function DashboardPage() {
     if (currentView === 'opretAftale') {
       return <CreateAppointmentForm onCreateAppointment={handleCreateAppointment} />
     }
-
     if (currentView === 'forecast') {
       return <p className="main-placeholder">Forecast side kommer forhåbentlig snart</p>
     }
-
     if (currentView === 'test') {
       return <TestComponent />
     }
-
     return (
       <section>
         <h2 className="overview-title">Brugere</h2>
