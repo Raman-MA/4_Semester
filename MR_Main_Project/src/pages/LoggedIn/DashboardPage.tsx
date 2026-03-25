@@ -94,9 +94,7 @@ function DashboardPage() {
             )}
           />
         )}
-
         {selectedUser && <p className="selected-user-text">Valgt bruger: {selectedUser.fullName}</p>}
-
         <h2 className="overview-title">Aftaler</h2>
         {appointments.length === 0 ? (
           <p className="main-placeholder">Ingen aftaler endnu. Klik på Opret aftale for at tilføje en aftale.</p>
@@ -115,7 +113,6 @@ function DashboardPage() {
             )}
           />
         )}
-
         {selectedAppointment && (
           <p className="selected-user-text">
             Valgt aftale: {selectedAppointment.protocol} ({selectedAppointment.scheduleTime} min)
@@ -124,7 +121,6 @@ function DashboardPage() {
       </section>
     )
   }
-
   return (
     <div className="dashboard-page">
       <div className="dashboard-body">
@@ -136,7 +132,6 @@ function DashboardPage() {
               className="sidebar-logo-img"
             />
           </div>
-
           <div className="sidebar-buttons" style={sidebarStyle}>
             <span className="sidebar-indicator" aria-hidden="true" />
             <Button
@@ -171,7 +166,6 @@ function DashboardPage() {
             </Button>
           </div>
         </aside>
-
         <div className="right-panel">
           <nav className="top-nav">
             <ul className="nav-links">
@@ -180,7 +174,6 @@ function DashboardPage() {
               <li><a href="#">Om os</a></li>
             </ul>
           </nav>
-
           <main className="main-content">{renderMainContent()}</main>
           <div className="dashboard-actions">
             <Button className="logout-btn" onClick={goToLogin}            >

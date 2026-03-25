@@ -22,15 +22,12 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 	const [isUrgent, setIsUrgent] = useState(false)
 	const [status, setStatus] = useState<Status>(Status.inProgress)
 	const [protocol, setProtocol] = useState<Protocol>(Protocol.CerebrumStd)
-
 	const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
 		event.preventDefault()
-
 		const parsedScheduleTime = Number(scheduleTime)
 		if (!arrivalTime || Number.isNaN(parsedScheduleTime) || parsedScheduleTime <= 0) {
 			return
 		}
-
 		onCreateAppointment({
 			arrivalTime: new Date(arrivalTime),
 			scheduleTime: parsedScheduleTime,
@@ -38,20 +35,18 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 			status,
 			protocol,
 		})
-
 		setArrivalTime('')
 		setScheduleTime('')
 		setIsUrgent(false)
 		setStatus(Status.inProgress)
 		setProtocol(Protocol.CerebrumStd)
 	}
-
 	return (
 		<section className="create-user-card">
 			<h2 className="create-user-title">Opret ny aftale</h2>
 			<form className="create-user-form" onSubmit={handleSubmit}>
 				<div className="form-group">
-					<label htmlFor="new-appointment-arrival">Ankomsttid</label>
+					<label htmlFor="new-appointment-arrival">Møde tidspunkt</label>
 					<InputField
 						id="new-appointment-arrival"
 						type="datetime-local"
@@ -59,9 +54,8 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 						onChange={(event) => setArrivalTime(event.target.value)}
 					/>
 				</div>
-
 				<div className="form-group">
-					<label htmlFor="new-appointment-duration">Varighed (minutter)</label>
+					<label htmlFor="new-appointment-duration">Planlagt Tid (minutter)</label>
 					<InputField
 						id="new-appointment-duration"
 						type="number"
@@ -71,7 +65,6 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 						placeholder="F.eks. 30"
 					/>
 				</div>
-
 				<div className="form-group">
 					<label htmlFor="new-appointment-status">Status</label>
 					<select
@@ -86,7 +79,6 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 						))}
 					</select>
 				</div>
-
 				<div className="form-group">
 					<label htmlFor="new-appointment-protocol">Protokol</label>
 					<select
@@ -101,7 +93,6 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 						))}
 					</select>
 				</div>
-
 				<div className="form-group">
 					<label htmlFor="new-appointment-urgent">
 						<input
@@ -113,7 +104,6 @@ function CreateAppointmentForm({ onCreateAppointment }: CreateAppointmentFormPro
 						Akut aftale
 					</label>
 				</div>
-
 				<Button type="submit" className="login-btn create-user-submit">
 					Opret aftale
 				</Button>

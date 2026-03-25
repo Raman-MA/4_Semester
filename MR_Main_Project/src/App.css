@@ -312,3 +312,9 @@
 .logout-btn:hover {
   background-color: var(--primary-btn-hover);
 }
+
+.error-msg {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
