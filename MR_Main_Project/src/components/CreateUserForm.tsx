@@ -18,17 +18,14 @@ function CreateUserForm({ onCreateUser }: CreateUserFormProps) {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-
     const trimmedName = fullName.trim()
     if (!trimmedName || !password.trim()) {
       return
     }
-
     onCreateUser({ fullName: trimmedName, password })
     setFullName('')
     setPassword('')
   }
-
   return (
     <section className="create-user-card">
       <h2 className="create-user-title">Opret ny bruger</h2>
