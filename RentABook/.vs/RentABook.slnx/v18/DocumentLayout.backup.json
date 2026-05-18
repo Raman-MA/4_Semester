@@ -66,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
@@ -82,30 +82,8 @@
               "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MongoDBContext.cs",
-              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
-              "RelativeDocumentMoniker": "RentABook\\DBContext\\MongoDBContext.cs",
-              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
-              "RelativeToolTip": "RentABook\\DBContext\\MongoDBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T08:57:30.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BorrowRecordRepository.cs",
-              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Persistence\\BorrowRecordRepository.cs",
-              "RelativeDocumentMoniker": "RentABook\\Persistence\\BorrowRecordRepository.cs",
-              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Persistence\\BorrowRecordRepository.cs",
-              "RelativeToolTip": "RentABook\\Persistence\\BorrowRecordRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T08:56:36.203Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Bookmark",
@@ -133,6 +111,31 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MongoDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
+              "RelativeDocumentMoniker": "RentABook\\DBContext\\MongoDBContext.cs",
+              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
+              "RelativeToolTip": "RentABook\\DBContext\\MongoDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T08:57:30.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BorrowRecordRepository.cs",
+              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Persistence\\BorrowRecordRepository.cs",
+              "RelativeDocumentMoniker": "RentABook\\Persistence\\BorrowRecordRepository.cs",
+              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Persistence\\BorrowRecordRepository.cs",
+              "RelativeToolTip": "RentABook\\Persistence\\BorrowRecordRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T08:56:36.203Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "BookRepository.cs",
               "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Persistence\\BookRepository.cs",
@@ -141,8 +144,7 @@
               "RelativeToolTip": "RentABook\\Persistence\\BookRepository.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T08:35:38.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-26T08:35:38.776Z"
             },
             {
               "$type": "Document",
@@ -154,8 +156,7 @@
               "RelativeToolTip": "RentABook\\Controllers\\BooksController.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAUwFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T08:33:07.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-24T08:33:07.015Z"
             },
             {
               "$type": "Document",

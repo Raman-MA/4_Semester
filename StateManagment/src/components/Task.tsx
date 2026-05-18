@@ -1,10 +1,9 @@
 import classNames from 'classnames'
 import './css/Task.css'
-
-type Status = 'PLANNED' | 'ONGOING' | 'DONE'
-const DEFAULT_STATUS: Status = 'PLANNED' // for debugging purposes.
+import type { Status } from '../types/task'
 
 interface TaskProps {
+    id: number
     title: string
     status: Status
 }
