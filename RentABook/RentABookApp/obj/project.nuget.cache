@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "+jooJ32THHI=",
+=======
+  "dgSpecHash": "iAuLJdYpcuo=",
+>>>>>>> a62924334ac550ee877d976acd31b55358a53726
   "success": true,
   "projectFilePath": "C:\\Users\\raman\\Documents\\Rpos\\4_Semester\\RentABook\\RentABookApp\\RentABookApp.csproj",
   "expectedPackageFiles": [],

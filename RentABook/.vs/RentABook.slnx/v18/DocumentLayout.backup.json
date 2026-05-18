@@ -7,56 +7,8 @@
       "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\dbcontext\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\persistence\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\persistence\\borrowrecordrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\persistence\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\persistence\\bookrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\controllers\\bookrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\controllers\\bookrecordscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D32E1D-1A00-C5FF-6908-A65824AF1E9E}|UnitTestRentABook\\UnitTestRentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\unittestrentabook\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D32E1D-1A00-C5FF-6908-A65824AF1E9E}|UnitTestRentABook\\UnitTestRentABook.csproj|solutionrelative:unittestrentabook\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabooksharedlib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|solutionrelative:rentabooksharedlib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabooksharedlib\\models\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|solutionrelative:rentabooksharedlib\\models\\mongodbsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabooksharedlib\\models\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|solutionrelative:rentabooksharedlib\\models\\borrowrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabooksharedlib\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D12F66-2839-C50A-EAEA-4FC3C423BC08}|RentABookSharedLib\\RentABookSharedLib.csproj|solutionrelative:rentabooksharedlib\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D32E1D-1A00-C5FF-6908-A65824AF1E9E}|UnitTestRentABook\\UnitTestRentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\unittestrentabook\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D32E1D-1A00-C5FF-6908-A65824AF1E9E}|UnitTestRentABook\\UnitTestRentABook.csproj|solutionrelative:unittestrentabook\\mstestsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\rentabook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\rentabook.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|c:\\users\\raman\\git\\repos\\4_semester\\rentabook\\rentabook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB33B099-49EA-9621-D259-276ED5D95F27}|RentABook\\RentABook.csproj|solutionrelative:rentabook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -148,13 +100,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Controllers\\BooksController.cs",
-              "RelativeDocumentMoniker": "RentABook\\Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "RentABook\\Controllers\\BooksController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwFQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MongoDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
+              "RelativeDocumentMoniker": "RentABook\\DBContext\\MongoDBContext.cs",
+              "ToolTip": "C:\\Users\\raman\\Git\\repos\\4_Semester\\RentABook\\RentABook\\DBContext\\MongoDBContext.cs",
+              "RelativeToolTip": "RentABook\\DBContext\\MongoDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T08:33:07.015Z"
             },
