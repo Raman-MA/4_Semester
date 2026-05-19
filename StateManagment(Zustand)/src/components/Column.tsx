@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import './css/Column.css'
 import Task from './Task.tsx'
 import { useStore } from '../stores/store.tsx'
-import type { Status } from '../types/task'
+import type { Status } from '../types/task.ts'
 
 interface ColumnProps {
     state: Status

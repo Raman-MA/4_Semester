@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Column from './components/Column.tsx'
 import './App.css'
 
